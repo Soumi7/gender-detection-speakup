@@ -1,5 +1,4 @@
-from flask import Flask, request, jsonify, render_template, url_for, make_response
-
+from flask import Flask, request, jsonify
 import numpy as np
 app = Flask(__name__)
 import numpy as np
@@ -7,7 +6,6 @@ import keras
 from keras.preprocessing import image
 from keras.callbacks import ModelCheckpoint,EarlyStopping
 from keras.layers import Dense, Activation, Dropout, Flatten, Input, Convolution2D, ZeroPadding2D, MaxPooling2D, Activation
-from keras.layers import Conv2D, AveragePooling2D
 from keras.models import Model, Sequential
 
 from keras.preprocessing import image
